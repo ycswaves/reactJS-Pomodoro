@@ -1,0 +1,76 @@
+body {
+  background-color: #333333;
+  min-height: 600px;
+  color: whiteSmoke;
+  box-sizing: border-box;
+}
+
+input.clockSetting {
+  background-color: #333333;
+  color: whiteSmoke;
+  width: 80px;
+  text-align: center;
+  font-size: 18px;
+}
+
+#clock {
+  border: 2px #93CD3F solid;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 20;
+}
+
+#clock:hover {
+  cursor: pointer;
+}
+
+.inner-border {
+  content: '';
+  border: 8px #333333 solid;
+  position: absolute;
+  border-radius: 50%;
+  top: 0px;
+  left: 0px;
+  height: 296px;
+  width: 296px;
+  z-index: -10;
+}
+
+#time-figure {
+  padding-top: 12%;
+  font-size: 72px;
+}
+
+.fill {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 0px;
+  width: 300px;
+  z-index: -100;
+}
+
+.fill.break {
+  background-color: #FF3F49;
+}
+
+.fill.default {
+  background-color: #93CD3F;
+}
+
+.title-label {
+  margin-top: 10%;
+  font-size: 24px;
+}
+
+
+
+label>input{
+  margin-right: auto;
+  margin-left: auto;
+}
